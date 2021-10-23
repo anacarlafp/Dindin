@@ -1,0 +1,175 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box; 
+    padding:0;
+    margin:0;
+    
+}
+
+header{
+    width: 100%;
+    height: 117px;
+    background-color: #2E948A;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content:space-around;
+    padding: 18px;
+    display: flex;
+    
+}
+
+
+header li{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: flex-start;
+    margin: 37px;
+}
+
+header a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lista{
+    cursor:pointer;
+    display: flex;
+}
+
+.parte1{
+    
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.parte1 h1{
+    color:#009688;
+    font-size: 47px;
+}
+
+.parte1 div p{
+    font-size: 20px;
+    width: 50%;
+}
+
+.ilustrablog{
+   height: 405px;
+
+}
+.row h1{
+    color:#FF4081;
+}
+/* flex-wrap:wrap; chegar fim da linha e quebra*/
+
+.image-row{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom:36px;
+}
+
+
+footer{
+    width: 100%;
+    height: 160px;
+    background-color:#419488;
+    font-family: 'Ubuntu', sans-serif; 
+    display: flex;
+    justify-content: space-around; 
+    padding: 30px;
+   
+}
+
+footer li{ 
+    color: white; 
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Ubuntu', sans-serif; 
+    margin: 10px;
+
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.botao button{
+    cursor: pointer;
+    color: white;
+    background-color:#2E948A;
+    border: 2px solid white; 
+    border-radius: 62px;
+    padding: 8px;
+    width: 230px;
+
+    background: linear-gradient(to right, #FFFFFF 50%, #2E948A  50%);
+    background-size: 200% 100%;
+    background-position: bottom right;
+    transition: all 200ms;
+}
+
+.botao button:hover {
+    background-position: left bottom;
+    color: #2E948A ;
+}  
+
+.info{
+    margin-left:50px;
+    width:40%;
+}
+.info img{
+    width: 100%;
+}
+/* 
+main{
+    padding:3%;
+    margin-top:10%; */
+
+
+/* responsividade*/
+
+@media (max-width: 600px){
+    header, footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+   
+    header{
+        width: 100%;     
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .image-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-row img{
+        position: relative;
+        width: 70%;
+        left:0px;
+        top:0px
+         
+    }
+    img{
+        width: 100%;
+    }
+    .info{
+        width:85%;
+    }
+
+    .parte1{
+        
+        padding-top: 70px;
+        width: 100%;
+        margin-left: 50px;   
+    }
+}
